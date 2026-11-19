@@ -137,7 +137,6 @@ Your practice profile at `~/.claude/plugins/config/uk-legal-plugins/privacy-lega
 ```
 privacy-legal-uk/
 ├── .claude-plugin/plugin.json
-├── .mcp.json
 ├── CLAUDE.md
 ├── README.md
 ├── hooks/hooks.json

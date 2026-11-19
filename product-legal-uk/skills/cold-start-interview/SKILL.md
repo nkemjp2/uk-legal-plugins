@@ -445,7 +445,7 @@ If yes, show this tailored list:
 
 2. **Research connector prompt.** Say:
 
-   > "Before your first launch review: connect a research tool. Without one, I'll flag every citation as unverified — with one, I verify them against current UK legislation and case law databases. In Cowork: Settings → Connectors. In Claude Code: authorize when a skill prompts you. The uk-legal MCP (configured in your .mcp.json) covers legislation.gov.uk, TNA Find Case Law, and Hansard."
+   > "Before your first launch review: connect a research tool. Without one, I'll flag every citation as unverified — with one, I verify them against current UK legislation and case law databases. In Cowork: Settings → Connectors. In Claude Code: authorize when a skill prompts you. No connectors ship with the plugin; if you add the uk-legal MCP to a `.mcp.json`, it covers legislation.gov.uk, TNA Find Case Law, and Hansard."
 
 3. **Propose first task:** "What's on the launch calendar this week? Let me take a first pass."
 

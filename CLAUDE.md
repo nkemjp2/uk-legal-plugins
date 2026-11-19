@@ -6,7 +6,7 @@ prompt content (skills, agents, hooks) or plugin metadata — not application co
 
 ## Target ecosystems
 
-These plugins reach **three** MCP-speaking client ecosystems via dual-manifest packaging (`.claude-plugin/plugin.json` + `.codex-plugin/plugin.json` per plugin, sharing the same `skills/` + `.mcp.json`):
+These plugins reach **three** MCP-speaking client ecosystems via dual-manifest packaging (`.claude-plugin/plugin.json` + `.codex-plugin/plugin.json` per plugin, sharing the same `skills/`):
 
 | Ecosystem | Audience | Reaches via |
 |---|---|---|
@@ -30,7 +30,6 @@ In `docs/`:
 .claude-plugin/marketplace.json   # the marketplace manifest — one entry per plugin
 <plugin>/                         # 11 plugins (employment-legal-uk, privacy-legal-uk, ...)
   .claude-plugin/plugin.json      # plugin manifest (name, version, description, author)
-  .mcp.json                       # MCP servers the plugin connects to
   CLAUDE.md                       # practice-profile TEMPLATE (see "Plugin CLAUDE.md" below)
   README.md                       # per-plugin docs
   skills/<name>/SKILL.md          # one skill per directory

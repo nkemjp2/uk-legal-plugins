@@ -13,13 +13,13 @@ The plugins are at their best when connected to authoritative sources. If you bu
 ## How to submit
 
 1. Publish your MCP server and document its tools, auth flow, and data coverage.
-2. Open a PR adding your server to the relevant plugin's `.mcp.json` with the URL, auth method, and a one-line description of what it gives Claude.
+2. Open a PR adding your server to the table below with the URL, auth method, and a one-line description of what it gives Claude.
 3. Include a note on which practice areas / plugins it's most useful for.
-4. We'll test against the plugin workflows and merge. Connectors that pass the retrieval-quality and injection-resistance checks go in the default `.mcp.json`; others get documented in the plugin README for users to add themselves.
+4. We'll test against the plugin workflows and merge. Connectors that pass the retrieval-quality and injection-resistance checks get documented here and in the plugin README for users to add themselves.
 
 ## Current connectors
 
-Connectors shipped in the default `.mcp.json` of each plugin:
+No connectors ship by default — the plugins contain no `.mcp.json`, so nothing connects to an outside service unless you add it. Connectors the plugins are designed to work with:
 
 | Connector | Plugins |
 |---|---|
@@ -39,8 +39,6 @@ Connectors shipped in the default `.mcp.json` of each plugin:
 | **Linear** | product-legal-uk |
 | **Atlassian (Jira)** | product-legal-uk |
 | **Asana** | product-legal-uk |
-
-See the `.mcp.json` in each plugin directory for the authoritative list.
 
 **UK Legal MCP** includes Find Case Law (TNA), BAILII, and legislation.gov.uk — covering E&W judgments from 2001, Scottish and NI case law, and the full UK statute book. It is the primary research connector for all 11 plugins.
 

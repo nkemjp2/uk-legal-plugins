@@ -299,7 +299,7 @@ This solves the cold-start problem (the supervisor doesn't know what to do first
 - Check HRIS field: "You said your HRIS is [system] — want me to run the leave tracker now to see if anything is open?"
 - If manual leave tracking: "You don't have an HRIS leave module — I'll track leaves in a register file. Use /employment-legal-uk:log-leave to add any leaves that are currently open."
 
-**Before your first review**: the uk-legal MCP and BAILII connectors in your `.mcp.json` give this plugin live access to UK legislation, case law, and HMRC guidance. Without them, I'll flag every citation as `[model knowledge — verify]`. If they're not connected, check your MCP config or run `/employment-legal-uk:cold-start-interview --check-integrations`.
+**Before your first review**: if you add the uk-legal MCP and BAILII connectors to a `.mcp.json` (none ship with the plugin), they give this plugin live access to UK legislation, case law, and HMRC guidance. Without them, I'll flag every citation as `[model knowledge — verify]`. If they're not connected, check your MCP config or run `/employment-legal-uk:cold-start-interview --check-integrations`.
 
 <!-- COLLATERAL LINKS: when onboarding collateral exists, add here:
      "Want a walkthrough? [Watch the 3-minute intro](URL) or [read the getting-started guide](URL)." -->
