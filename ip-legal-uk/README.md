@@ -102,7 +102,7 @@ Citations from model knowledge or web search are tagged `[model knowledge — ve
 
 ## Integrations
 
-Ships with connectors configured in `.mcp.json`:
+No connectors ship with the plugin. It is built to work with these if you add them to a `.mcp.json` in the plugin directory:
 
 - **uk-legal MCP** — UK legislation and case law research
 - **govuk MCP** — IPO and government guidance
@@ -144,7 +144,6 @@ Output: registrations with renewal, affidavit, or maintenance deadlines in the n
 ```
 ip-legal-uk/
 ├── .claude-plugin/plugin.json
-├── .mcp.json
 ├── CLAUDE.md                    # Your practice profile — written by cold-start, edited by you
 ├── README.md
 ├── agents/

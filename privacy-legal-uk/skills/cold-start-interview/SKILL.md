@@ -431,7 +431,7 @@ Close with:
 1. **Show the summary.** "Here's what I heard. The DPA playbook is the part to check hardest — did I get your positions right?"
 
 2. **Research connector prompt.** Say:
-   > "Before your first DPA review or DPIA: connect a research tool. Without one, I'll flag every UK GDPR citation as unverified — with one (the uk-legal MCP), I verify them against current UK legislation. In Claude Code: the uk-legal MCP is already configured in `.mcp.json`. Authorise when a skill prompts you."
+   > "Before your first DPA review or DPIA: connect a research tool. Without one, I'll flag every UK GDPR citation as unverified — with one (the uk-legal MCP), I verify them against current UK legislation. No connectors ship with the plugin — in Claude Code, add the uk-legal MCP to a `.mcp.json` in the plugin if you want it."
 
 3. **Propose first tasks:**
    - "Want me to diff your privacy notice against your actual data collection? Notices drift."

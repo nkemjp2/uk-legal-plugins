@@ -125,7 +125,7 @@ The legal research connectors in this plugin are the difference between a verifi
 
 ## Integrations
 
-Ships with the UK-specific MCP servers in `.mcp.json`:
+No connectors ship with the plugin. It is built to work with these if you add them to a `.mcp.json` in the plugin directory:
 
 - **uk-legal** — UK case law, legislation, Hansard, HMRC guidance
 - **govuk** — GOV.UK official content search

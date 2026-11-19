@@ -81,7 +81,7 @@ The commands above run when you invoke them — for when you're working a matter
 
 **Connect a research tool first — the citation guardrails depend on it.** Without one, every cite is tagged `[model knowledge — verify]` and the reviewer note above each deliverable records that sources weren't verified. Skills work either way; a research tool (uk-legal MCP, BAILII, legislation.gov.uk) just shifts verification work off your plate.
 
-Ships with connectors configured in `.mcp.json`:
+No connectors ship with the plugin. It is built to work with these if you add them to a `.mcp.json` in the plugin directory:
 
 - **uk-legal** — UK case law (TNA Find Case Law), legislation, Hansard, HMRC guidance, OSCOLA citations
 - **govuk** — GOV.UK content, CMA/FCA/ICO guidance, government organisations
@@ -136,7 +136,6 @@ Your practice profile at `~/.claude/plugins/config/uk-legal-plugins/commercial-l
 ```
 commercial-legal-uk/
 ├── .claude-plugin/plugin.json
-├── .mcp.json
 ├── CLAUDE.md                    # Your team practice profile — written by cold-start, edited by you
 ├── README.md
 ├── agents/

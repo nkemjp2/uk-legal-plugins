@@ -238,7 +238,7 @@ Pair with the [UK Legal MCP server](https://github.com/paulieb89/uk-legal-mcp) f
 | **Skills** | Domain expertise and step-by-step methods Claude draws on automatically when relevant — and slash actions you trigger explicitly: `/commercial-legal-uk:review`, `/privacy-legal-uk:dsar-response`. | `<plugin>/skills/<skill>/SKILL.md` |
 | **Agents** | Scheduled or event-driven workflows (renewal watcher, hearing watcher, reg-change monitor). Runs in the background, posts to a channel or writes a file. | `<plugin>/agents/` |
 | **Practice profile** | Plain-English `CLAUDE.md` describing your playbook, escalation rules, and house style. Every skill reads from it. | `~/.claude/plugins/config/uk-legal-plugins/<plugin>/CLAUDE.md` |
-| **Connectors** | [MCP servers](https://modelcontextprotocol.io/) wiring Claude to your data — research, CLM, DMS, IP register, productivity. | `.mcp.json` (per plugin) |
+| **Connectors** | [MCP servers](https://modelcontextprotocol.io/) wiring Claude to your data — research, CLM, DMS, IP register, productivity. | `.mcp.json` you add (none ship) |
 
 Everything is markdown and JSON. No build step.
 
@@ -249,7 +249,7 @@ Everything is markdown and JSON. No build step.
 > [!IMPORTANT]
 > **Connect the UK Legal MCP first.** Without it, every citation comes from training data alone and is flagged `[verify]`. With it, the plugins pull from BAILII, TNA Find Case Law, legislation.gov.uk, and Hansard, and every citation is tagged with its source.
 
-Each plugin's `.mcp.json` already lists the connectors it uses. You authorise them once, then Claude pulls from authoritative sources and verifies its citations against current databases.
+No connectors ship with the plugins, so nothing connects to an outside service unless you add it. To use one, add it to a `.mcp.json` in the plugin directory; Claude then pulls from that source and verifies its citations against it.
 
 | Connector | Source | Plugins |
 |---|---|---|
@@ -492,7 +492,6 @@ The full map across all 11 plugins. The cold-start interview is the first thing 
 .claude-plugin/marketplace.json   # the marketplace manifest
 <plugin>/                         # 11 plugins
   .claude-plugin/plugin.json      # plugin manifest
-  .mcp.json                       # MCP servers the plugin connects to
   CLAUDE.md                       # practice-profile TEMPLATE (copied on cold-start)
   README.md                       # per-plugin docs
   skills/<name>/SKILL.md          # one skill per directory

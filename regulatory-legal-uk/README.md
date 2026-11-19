@@ -90,13 +90,13 @@ UK consultations follow the Cabinet Office Code of Practice on Consultation (typ
 
 ## Integrations
 
-Ships with UK legal research connectors in `.mcp.json`:
+No connectors ship with the plugin. It is built to work with these if you add them to a `.mcp.json` in the plugin directory:
 
 - **uk-legal** — legislation.gov.uk, TNA Find Case Law, Hansard, Bills, HMRC guidance, OSCOLA citation parsing
 - **govuk** — GOV.UK content, consultations, guidance, organisations
 - **uk-due-diligence** — Companies House, Charity Commission, HMLR, The Gazette, HMRC VAT
 
-Add Slack and Google Drive by extending `.mcp.json` when partner URLs are available. Direct regulator RSS/email as fallback for all feeds.
+Slack and Google Drive can be added the same way. Direct regulator RSS/email as fallback for all feeds.
 
 ## Prerequisites
 

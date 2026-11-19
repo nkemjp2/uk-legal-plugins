@@ -141,7 +141,7 @@ The UK legal research connectors in this plugin are:
 
 ## Integrations (open questions)
 
-Ships with the UK MCP connectors in `.mcp.json`:
+No connectors ship with the plugin. It is built to work with these if you add them to a `.mcp.json` in the plugin directory:
 
 - **uk-legal** — statutes, case law, Hansard, bills, OSCOLA citation parsing
 - **govuk** — GOV.UK guidance and postcode/local authority lookup
@@ -158,7 +158,6 @@ Your practice profile at `~/.claude/plugins/config/uk-legal-plugins/legal-clinic
 ```
 legal-clinic-uk/
 ├── .claude-plugin/plugin.json
-├── .mcp.json                          # uk-legal, govuk, uk-due-diligence
 ├── CLAUDE.md                          # Supervisor's clinic config — written by cold-start
 ├── README.md
 ├── deadlines.yaml                     # operational deadline ledger

@@ -56,7 +56,7 @@ The commands above run when you invoke them — for when you're working a matter
 
 **Connect a research tool first — the citation guardrails depend on it.** Without one, every cite is tagged `[verify]` and the reviewer note above each deliverable records that sources weren't verified. Skills work either way; a research tool just shifts verification work off your plate.
 
-Ships with connectors configured in `.mcp.json`:
+No connectors ship with the plugin. It is built to work with these if you add them to a `.mcp.json` in the plugin directory:
 
 - **uk-legal** — legislation, case law, Hansard, HMRC guidance, Bills and committee evidence
 - **govuk** — GOV.UK content, regulatory guidance, postcode resolution
